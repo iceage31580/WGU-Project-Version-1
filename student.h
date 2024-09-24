@@ -4,6 +4,7 @@
 #include "degreeChosen.h"
 #include <string>
 
+//class student requirement D.1
 class Student {
 public:
     Student(const std::string& studentID, const std::string& firstName, const std::string& lastName,
@@ -23,7 +24,7 @@ public:
     void setAge(int age);
     void setDegree(Degree degree);
 
-    void print() const;  // Add this function to print student details
+    void print() const;  // Added this function to print student details
 
 private:
     std::string studentID;
@@ -32,7 +33,7 @@ private:
     std::string emailAddress;
     int age;
     Degree degree;
-    int daysInCourse[3]; // Add this array to track days in courses
+    int daysInCourse[3]; // Added this array to track days in courses
 };
 
 #endif // STUDENT_H_INCLUDED
